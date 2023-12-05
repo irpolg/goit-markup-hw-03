@@ -3,6 +3,26 @@ body {
     color:#434455;
     background-color: #ffffff; 
 }
+/*3ДЗ   */
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1158px;
+    padding: 0 15px;
+    margin: 0 auto;
+    Border: 0px, 0px, 1px, 0px;
+  }
+  /*flex-direction: row;
+  flex-wrap: nowrap;*/
+
+
+/*3ДЗ   */
+  .container {
+    max-width: 1158px;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
 
 .logo {
     font-family: "Raleway", sans-serif;
@@ -64,6 +84,15 @@ body {
 .menu-addr .email-tel:focus {
     color: #404bbf;    
 }
+/*3ДЗ   */
+.menu-nav {
+    top:24px;
+    height: 24px;
+    width: 261px;
+    left: 347px;
+    gap: 40px;
+}
+
 
 .about {
     background-color: #2E2F42;
@@ -94,6 +123,19 @@ button:hover,
 button:focus {
     background-color: #404bbf;
 }
+/*3ДЗ   */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+} */
 
 h2 {
     font-size: 36px;
