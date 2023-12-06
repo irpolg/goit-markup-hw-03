@@ -10,6 +10,10 @@ body {
     color:#434455;
     background-color: #ffffff; 
 }
+
+img {
+    display: block;
+}
 /*3ДЗ   */
 .header-container {
     display: flex;
@@ -166,12 +170,17 @@ button:focus {
 /*3ДЗ   */
 .visio {
     width: 1128px;
-    margin-bottom: 120px;
+    padding: 120px 0;
  }
+ /*margin-bottom: 120px;*/
 
 .menu-visio {
     display: flex;  /*06-12 для розміщення елементів списку по горизонталі в рядок*/
     gap: 24px;      /*06-12 розмір відступів між елементами списку*/
+}
+
+.menu-visio-li {
+    width: calc((100% - 72px) / 4);
 }
 
 h2 {
@@ -226,8 +235,8 @@ h2 {
 
 .team-li {
     background-color: #FFFFFF;
-    width: calc((100% - 72px) / 4);
     border-radius: 0px 0px 4px 4px;
+    width: calc((100% - 72px) / 4); 
 }
 
 .team-li-div {
