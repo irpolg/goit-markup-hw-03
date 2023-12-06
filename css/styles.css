@@ -5,6 +5,11 @@
   box-sizing: border-box;
 }
 
+h1, h2, h3, ol, ul {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: "Roboto",sans-serif;
     color:#434455;
@@ -14,7 +19,7 @@ body {
 img {
     display: block;
 }
-/*3ДЗ   */
+
 .header-container {
     display: flex;
     align-items: center;
@@ -25,7 +30,7 @@ img {
     Border: 0px, 0px, 1px, 0px;
     /*border-bottom: 1px solid #e7e9fc; */
   }
-/*3ДЗ   */
+
 .header-nav {
     display: flex;
     align-items: center;
@@ -34,7 +39,6 @@ img {
     border-bottom: 1px solid #e7e9fc
 }
 
-/*3ДЗ   */
   .container {
     max-width: 1158px;
     padding: 0 15px;
@@ -84,7 +88,7 @@ img {
 .menu-address {
     font-style: normal;
 }
-/*3ДЗ   */
+
 .menu-addr .email-tel {
     font-size: 16px;
     font-weight: 400;
@@ -101,7 +105,7 @@ img {
 .menu-addr .email-tel:focus {
     color: #404bbf;    
 }
-/*3ДЗ   */
+
 .menu-nav {
     display: flex;
     gap: 40px;     
@@ -109,7 +113,6 @@ img {
     padding-bottom: 24px; /* 06-12*/
 }
 
-/*3ДЗ   */
 .menu-addr {
     display: flex;
     gap: 40px;
@@ -120,6 +123,7 @@ img {
     text-align: center;
     height: 600px;
     padding: 188px 0;
+    margin-bottom: 120px;
 }   
 
 h1 {
@@ -130,9 +134,9 @@ h1 {
     line-height: 1.07;
     letter-spacing: 0.02em;
     color: white;
-    /*padding-top: 188px; /* 06-12 для визначення відступів всередині секції*/
-    /*padding-bottom: 48px;  /* 06-12 для визначення відступів всередині секції*/  
     max-width: 496px;   /* 06-12 для визначення ширини тексту в заголовка*/  
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .about button {
@@ -149,13 +153,15 @@ h1 {
     height: 56px;       /* 06-12 висота кнопки*/
     border: none;       /* 06-12 для вимкнення стандартного оформлення кнопки*/
     border-radius: 4px; /* 06-12 заокруглення у кнопки*/
+    margin-left: auto;
+    margin-right: auto;
 }
 
 button:hover, 
 button:focus {
     background-color: #404bbf;
 }
-/*3ДЗ   */
+
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -167,13 +173,13 @@ button:focus {
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
-} */
-/*3ДЗ   */
+} 
+
 .visio {
     width: 1128px;
     padding: 120px 0;
+    margin-bottom: 120px;
  }
- /*margin-bottom: 120px;*/
 
 .menu-visio {
     display: flex;  /*06-12 для розміщення елементів списку по горизонталі в рядок*/
@@ -193,7 +199,7 @@ h2 {
     color: #2e2f42;
 }
 
-/* 3й заголовок */
+/* h3 заголовок */
 .h-visio {
     font-size: 20px;
     font-weight: 500;
@@ -215,12 +221,12 @@ h2 {
 .team {
     background-color: #F4F4FD;
     padding: 120px 0;
+    margin-bottom: 120px;
 }
 
 .menu-team {
     display: flex;  /*06-12 для розміщення елементів списку по горизонталі в рядок*/
     gap: 24px;      /*06-12 розмір відступів між елементами списку*/
-    /*width: calc((100% - 72px) / 4);  06-12*/
 }
 
 /*заголовок h2*/
@@ -244,7 +250,7 @@ h2 {
     padding: 32px 0;
 }
 
-/* 3й заголовок  */
+/* h3 заголовок  */
 .h-team {
     font-size: 20px;
     font-weight: 500;
@@ -266,15 +272,10 @@ h2 {
 }
 
 .port {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    margin-bottom: 120px;
 
 }
 
-/*.port h2 {
-    line-height: 1.11;
-    text-transform: capitalize;
-}*/
 /* h2 заголовок */
 .port-h {
     line-height: 1.11;
@@ -282,7 +283,7 @@ h2 {
     margin-bottom: 72px;
 }
 
-/* 3й заголовок */
+/* h3 заголовок */
 .h-port {
     font-size: 20px;
     font-weight: 500;
