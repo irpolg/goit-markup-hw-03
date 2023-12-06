@@ -82,8 +82,7 @@ body {
 .menu-address {
     font-style: normal;
 }
-
-
+/*3ДЗ   */
 .menu-addr .email-tel {
     font-size: 16px;
     font-weight: 400;
@@ -92,6 +91,8 @@ body {
     letter-spacing: 0.02em;
     color: #434455;    
     text-decoration:none;
+    padding-top: 24px;    /* 06-12*/
+    padding-bottom: 24px; /* 06-12*/
 }
 
 .menu-addr .email-tel:hover,
@@ -102,6 +103,8 @@ body {
 .menu-nav {
     display: flex;
     gap: 40px;     
+    padding-top: 24px;    /* 06-12*/
+    padding-bottom: 24px; /* 06-12*/
 }
 
 /*3ДЗ   */
@@ -110,11 +113,10 @@ body {
     gap: 40px;
 }
 
-
-
 .about {
     background-color: #2E2F42;
     text-align: center;
+    height: 600px;
 }   
 
 h1 {
@@ -125,6 +127,9 @@ h1 {
     line-height: 1.07;
     letter-spacing: 0.02em;
     color: white;
+    padding-top: 188px; /* 06-12 для визначення відступів всередині секції*/
+    padding-bottom: 48px;  /* 06-12 для визначення відступів всередині секції*/
+    max-width: 496px;   /* 06-12 для визначення ширини тексту в заголовка*/  
 }
 
 .about button {
@@ -135,6 +140,12 @@ h1 {
     background-color: #4d5ae5;
     letter-spacing: 0.04em;
     cursor: pointer;
+    padding: 16px 32 px;
+    display: block;  /* 06-12 для можливості центрувати кнопку через властивість margin?*/
+    min-width: 169px;   /* 06-12 мінімальна ширина кнопки*/
+    height: 56px;       /* 06-12 висота кнопки*/
+    border: none;       /* 06-12 для вимкнення стандартного оформлення кнопки*/
+    border-radius: 4px; /* 06-12 заокруглення у кнопки*/
 }
 
 button:hover, 
@@ -154,6 +165,16 @@ button:focus {
     clip: rect(0 0 0 0);
     overflow: hidden;
 } */
+/*3ДЗ   */
+.visio {
+    width: 1128px;
+    margin-bottom: 120px;
+ }
+
+.menu-visio {
+    display: flex;  /*06-12 для розміщення елементів списку по горизонталі в рядок*/
+    gap: 24px;      /*06-12 розмір відступів між елементами списку*/
+}
 
 h2 {
     font-size: 36px;
@@ -164,7 +185,6 @@ h2 {
     color: #2e2f42;
 }
 
-.team .team-h, 
 .port h2 {
     line-height: 1.11;
     text-transform: capitalize;
@@ -177,17 +197,7 @@ h2 {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
-}
-
-/* 3й заголовок  */
-.team .h-team {
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    color: #2e2f42;
-    text-align: center;
-    text-transform: capitalize
+    margin-bottom: 8px;  /*06-12 відступ між заголовком і параграфом*/
 }
 
 /* 3й заголовок */
@@ -205,14 +215,63 @@ h2 {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
+    margin-top: 0;
 }
 
-.team .p-team {
+.team {
+    background-color: #F4F4FD;
+    padding: 120px 0;
+}
+
+.menu-team {
+    display: flex;  /*06-12 для розміщення елементів списку по горизонталі в рядок*/
+    gap: 24px;      /*06-12 розмір відступів між елементами списку*/
+    /*width: calc((100% - 72px) / 4);  06-12*/
+}
+
+/*заголовок h2*/
+.team-h {
+    line-height: 1.11;
+    text-transform: capitalize;
+    margin-bottom: 72px; /*06-12 відступ між h2 заголовком і параграфом*/
+}
+
+.team p {
+    text-align: center;
+}
+
+.team-li {
+    background-color: #FFFFFF;
+    /*06-12 пробую розрахувати 
+    ширина пункту списку (від загальної ширини екрану віднімаємо 
+    суму відступів між пунктами і ділимо це на кількість пунктів списку) */
+    width: calc((100% - 72px) / 4);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.team-li-div {
+    padding: 32px 0;
+}
+
+/* 3й заголовок  */
+.h-team {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 8px; /*06-12 відступ від заголовка до параграфу*/
+}
+
+.p-team {
     font-size: 16px;
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
+    text-align: center;
 }
 
 .port .p-port {
@@ -221,18 +280,6 @@ h2 {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
-}
-
-.team {
-    background-color: #F4F4FD;
-}
-
-.team p {
-    text-align: center;
-}
-
-.team .team-li {
-    background-color: #FFFFFF;
 }
 
 footer .footer-text {
