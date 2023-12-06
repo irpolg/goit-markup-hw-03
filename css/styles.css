@@ -48,7 +48,6 @@ body {
 
 .logo-span-header {
     color: #2e2f42;
-    margin-right: 76px;
 }
 
 .logo-span-footer {
@@ -291,10 +290,17 @@ footer .footer-text {
     letter-spacing: 0.02em;
 }
 
-footer {
+/*footer {
     background-color: #2E2F42;
-}
+}*/
 
 .footer {
     padding: 100px 0;
+    background-color: #2E2F42;
+}
+
+.footer-container-div {
+    margin-right: 76px;     /*06-12*/
+    display: inline-block;  /*06-12*/
+    margin-bottom: 16px;    /*06-12*/
 }
