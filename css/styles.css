@@ -183,11 +183,6 @@ h2 {
     color: #2e2f42;
 }
 
-.port h2 {
-    line-height: 1.11;
-    text-transform: capitalize;
-}
-
 /* 3й заголовок */
 .h-visio {
     font-size: 20px;
@@ -196,15 +191,6 @@ h2 {
     letter-spacing: 0.02em;
     color: #2e2f42;
     margin-bottom: 8px;  /*06-12 відступ між заголовком і параграфом*/
-}
-
-/* 3й заголовок */
-.port .h-port {
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 1.2;
-    color: #2e2f42;  
-    letter-spacing: 0.02em;
 }
 
 .p-visio {
@@ -272,7 +258,34 @@ h2 {
     text-align: center;
 }
 
-.port .p-port {
+.port {
+    padding-top: 120px;
+    padding-bottom: 120px;
+
+}
+
+/*.port h2 {
+    line-height: 1.11;
+    text-transform: capitalize;
+}*/
+/* h2 заголовок */
+.port-h {
+    line-height: 1.11;
+    text-transform: capitalize;
+    margin-bottom: 72px;
+}
+
+/* 3й заголовок */
+.h-port {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    color: #2e2f42;  
+    letter-spacing: 0.02em;
+    margin-bottom: 8px;
+}
+
+.p-port {
     font-size: 16px;
     font-weight: 400;
     line-height: 1.5;
@@ -280,7 +293,24 @@ h2 {
     color: #434455;
 }
 
-footer .footer-text {
+.menu-port {
+    display: flex;
+    flex-wrap: wrap; /*для переносу елементів списку на новий рядок якщо їм не вистачає місця в попередньому */
+    column-gap: 24px; /* горизонтальних відступів між пунктами списку*/                
+    row-gap: 48px;  /*вертикальних відступів між елементами списку якщо вони переносяться на новий рядок*/
+}
+
+.menu-port-li {
+    width: calc((100% - 48px) / 3); 
+}
+
+.menu-port-li-div{
+    padding: 32px 16px; 
+    border: 1px solid #e7e9fc;
+    border-top: none; 
+}
+
+.footer-text {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-size: 16;
