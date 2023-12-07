@@ -39,11 +39,11 @@ img {
     border-bottom: 1px solid #e7e9fc
 }
 
-  .container {
+.container {
     max-width: 1158px;
     padding: 0 15px;
     margin: 0 auto;
-  }
+}
 
 .logo {
     font-family: "Raleway", sans-serif;
@@ -54,6 +54,7 @@ img {
     text-transform: uppercase;
     color: #4d5ae5;
     text-decoration:none;
+    margin-right: 76px; 
 }
 
 .logo-span-header {
