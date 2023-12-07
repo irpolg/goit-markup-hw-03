@@ -274,7 +274,8 @@ h2 {
 
 .port {
     margin-bottom: 120px;
-
+    padding-top: 120px; 
+    padding-bottom: 120px; 
 }
 
 /* h2 заголовок */
